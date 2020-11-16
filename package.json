@@ -163,6 +163,7 @@
     "lint:codes": "eslint ./src ./test ./test-d ./e2e ./benchmark ./format-explorer --ext .js,.ts,.vue",
     "lint:docs": "textlint --config .textlintrc.js docs/**/*.md",
     "lint:fix": "npm-run-all --parallel \"lint:codes --fix\" \"lint:docs --fix\"",
+    "prepare": "npm run build",
     "release:prepare": "shipjs prepare",
     "release:trigger": "shipjs trigger",
     "test": "npm-run-all lint clean:cache:jest test:cover test:e2e",
